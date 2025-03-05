@@ -80,7 +80,7 @@ void Node::setHeight(int h) {
 }
 
 void Node::setNumSubjects(int newNumSubjects) {
-    CourseInfo* newCourses = new CourseInfo[max(1, newNumSubjects)];
+    CourseInfo* newCourses = new CourseInfo[max(0, newNumSubjects)];
 
     int copyCount = min(numSubjects, newNumSubjects);
     for (int i = 0; i < copyCount; i++) {
